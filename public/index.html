@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React App</title>
+    <title>Real-time Chat App</title>
+    <!-- Bootstrap CDN を使用してスタイリング -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- ReactのAppコンポーネントをマウントするdiv要素 -->
     <div id="root"></div>
+
+    <!-- React スクリプトの読み込み -->
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+
+    <!-- Babel を使用して JSX を変換するスクリプト -->
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+
+    <!-- アプリケーションのエントリーポイント -->
+    <script type="application/javascript" src="../dist/bundle.js"></script>
 </body>
 
 </html>

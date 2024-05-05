@@ -2,9 +2,10 @@ class WebSocketClient {
     private socket: WebSocket;
 
     constructor() {
-        this.socket = new WebSocket('ws://localhost:8080'); // WebSocketサーバーのURLを指定します
+        this.socket = new WebSocket('ws://192.168.0.156:8080/test');
+
         this.socket.onopen = () => {
-            console.log('WebSocket connection established.');
+            console.log('接続');
         };
         this.socket.onmessage = (event) => {
             if (this.onMessageReceived) {
@@ -12,7 +13,11 @@ class WebSocketClient {
             }
         };
         this.socket.onclose = () => {
-            console.log('WebSocket connection closed.');
+            console.log('切断');
+        };
+
+        this.socket.onerror = (error) => {
+            console.error('WebSocket error:', error);
         };
     }
 

@@ -23,6 +23,7 @@ const App: React.FC = () => {
     const handleSendMessage = () => {
         if (webSocketClient && inputMessage.trim() !== '') {
             webSocketClient.sendMessage(inputMessage);
+            setMessages(prevMessages => [...prevMessages, inputMessage]);
             setInputMessage('');
         }
     };
@@ -36,10 +37,10 @@ const App: React.FC = () => {
                     </div>
                 ))}
             </div>
+
             <div className="InputBox">
                 <input
                     type="text"
-                    placeholder="Type your message here..."
                     value={inputMessage}
                     onChange={(e) => setInputMessage(e.target.value)}
                 />
