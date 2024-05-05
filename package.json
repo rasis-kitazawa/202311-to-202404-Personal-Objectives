@@ -1,0 +1,27 @@
+{
+  "name": "202311-to-202404-personal-objectives",
+  "version": "1.0.0",
+  "description": "202311-202404自己目標成果物",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasis-kitazawa/202311-to-202404-Personal-Objectives.git"
+  },
+  "author": "rasis-kitazawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasis-kitazawa/202311-to-202404-Personal-Objectives/issues"
+  },
+  "homepage": "https://github.com/rasis-kitazawa/202311-to-202404-Personal-Objectives#readme",
+  "dependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.4.5",
+    "websocket": "^1.0.34"
+  }
+}
