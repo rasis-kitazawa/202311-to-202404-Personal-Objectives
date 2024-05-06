@@ -1,0 +1,30 @@
+/* チャットボックス */
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+/* メッセージ */
+.message {
+    margin-bottom: 10px;
+}
+
+/* 入力ボックスと送信ボタンを含むコンテナ */
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* 入力ボックス */
+.input-box input[type="text"] {
+    flex: 1;
+}
+
+/* 送信ボタン */
+.input-box button {
+    margin-left: 10px;
+}
